@@ -1,0 +1,18 @@
+/.bundle/
+/.yardoc
+/_yardoc/
+/coverage/
+/doc/
+/pkg/
+/spec/reports/
+/tmp/
+
+# Ignore debugging history
+.byebug_history
+
+# rspec failure tracking
+.rspec_status
+
+# OS X Files
+.DS_Store
+*/.DS_Store

@@ -1,4 +1,5 @@
-module NasaRovers
-  class Error < StandardError; end
-  # Your code goes here...
+class NasaRovers
+  def run
+    puts "This is a test run"
+  end
 end

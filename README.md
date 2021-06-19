@@ -10,7 +10,11 @@ TODO: Delete this and the text above, and describe your gem
 
 ## Usage
 
-TODO: Write usage instructions here
+Run `rake run` to enjoy the project.
+
+The command `rake spec` can be used to run the tests.
+
+The command `rake rubocop` can be used to run linter.
 
 ## Development
 

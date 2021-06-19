@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require "nasa/rovers"
+require "nasa_rovers"
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure

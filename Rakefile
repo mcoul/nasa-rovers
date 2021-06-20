@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 require "rspec/core/rake_task"
-require_relative 'lib/nasa_rovers.rb'
+require_relative "lib/nasa_rovers"
 
 RSpec::Core::RakeTask.new(:spec)
 

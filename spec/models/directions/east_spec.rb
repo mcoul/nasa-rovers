@@ -1,12 +1,12 @@
 require "spec_helper"
-require_all "lib/models"
 
 RSpec.describe East do
-  subject(:context) { Rover.new(x_position, y_position, east) }
+  subject(:context) { Rover.new(x_position, y_position, east, plateau) }
 
   let(:east) { described_class.new }
   let(:x_position) { 3 }
-  let(:y_position) { 5 }
+  let(:y_position) { 4 }
+  let(:plateau) { Plateau.new(5, 5) }
 
   describe "#move_forward" do
     it "does not change the y position" do

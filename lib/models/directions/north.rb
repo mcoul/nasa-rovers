@@ -1,6 +1,6 @@
 class North < Direction
   def move_forward(x_position, y_position)
-    [Integer(x_position), Integer(y_position) + 1]
+    [x_position, y_position + 1]
   end
 
   def turn_left

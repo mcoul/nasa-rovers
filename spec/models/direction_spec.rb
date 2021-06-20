@@ -1,10 +1,9 @@
 require "spec_helper"
-require "models/direction"
 
 RSpec.describe Direction do
   subject(:direction) { described_class.new }
   let(:x_position) { 3 }
-  let(:y_position) { 5 }
+  let(:y_position) { 4 }
 
   describe "#move_forward" do
     it "raises a 'method not implemented' error" do

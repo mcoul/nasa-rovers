@@ -1,8 +1,9 @@
 require "spec_helper"
-require "models/rover"
 
 RSpec.describe Rover do
-  subject(:rover) { described_class.new(1, 3, direction) }
+  subject(:rover) { described_class.new(1, 3, direction, plateau) }
+
+  let(:plateau) { Plateau.new(5, 5) }
 
   describe "#move_forward" do
     context "when it is facing north" do

@@ -1,6 +1,6 @@
 class East < Direction
   def move_forward(x_position, y_position)
-    [Integer(x_position) + 1, Integer(y_position)]
+    [x_position + 1, y_position]
   end
 
   def turn_left

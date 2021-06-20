@@ -1,5 +1,3 @@
-require "spec_helper"
-
 RSpec.describe Direction do
   subject(:direction) { described_class.new }
   let(:x_position) { 3 }

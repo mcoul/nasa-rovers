@@ -1,5 +1,3 @@
-require "spec_helper"
-
 RSpec.describe South do
   subject(:context) { Rover.new(x_position, y_position, south, plateau) }
 

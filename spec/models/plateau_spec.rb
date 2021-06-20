@@ -1,5 +1,3 @@
-require "spec_helper"
-
 RSpec.describe Plateau do
   subject(:plateau) { described_class.new(5, 5) }
 

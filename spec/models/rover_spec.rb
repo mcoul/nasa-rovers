@@ -1,5 +1,3 @@
-require "spec_helper"
-
 RSpec.describe Rover do
   subject(:rover) { described_class.new(1, 3, direction, plateau) }
 

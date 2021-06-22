@@ -1,6 +1,7 @@
 class DeployRoverParser
   class << self
     def execute(input, plateau)
+      raise WarningMessage.deploy_rover if invalid?(input.split)
       x_position = input.split[0]
       y_position = input.split[1]
       direction = directions[input.scan(/\w/).last.upcase]
@@ -18,6 +19,10 @@ class DeployRoverParser
         "W" => West.new,
         "S" => South.new
       }
+    end
+
+    def invalid?(input)
+      input.size != 3 || !/\A\d+\z/.match(input[0]) || !/\A\d+\z/.match(input[1])
     end
   end
 end

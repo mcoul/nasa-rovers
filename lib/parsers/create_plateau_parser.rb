@@ -9,7 +9,7 @@ class CreatePlateauParser
     private
 
     def invalid?(input)
-      input.size != 2 || !/\A\d+\z/.match(input[0] || input[1])
+      input.size != 2 || !/\A\d+\z/.match(input[0]) || !/\A\d+\z/.match(input[1])
     end
   end
 end

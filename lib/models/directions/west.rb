@@ -10,4 +10,8 @@ class West < Direction
   def turn_right
     @context.change_direction(North.new)
   end
+
+  def name
+    "W".freeze
+  end
 end

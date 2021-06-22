@@ -1,4 +1,4 @@
-require "nasa_rovers"
+require_relative "../app"
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure

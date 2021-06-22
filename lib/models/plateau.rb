@@ -4,7 +4,7 @@ class Plateau
     @max_y = max_y.to_i
   end
 
-  def out_of_bounds?(x, y)
-    return x >= @max_x || y >= @max_y || x < 0 || y < 0
+  def out_of_bounds?(x_pos, y_pos)
+    x_pos > @max_x || y_pos > @max_y || x_pos.negative? || y_pos.negative?
   end
 end

@@ -1,7 +1,7 @@
 class Direction
   attr_accessor :context
 
-  def move_forward(x_position, y_position)
+  def move_forward(_x_position, _y_position)
     raise NotImplementedError, "#{self.class} has not implemented method '#{__method__}'"
   end
 
@@ -10,6 +10,10 @@ class Direction
   end
 
   def turn_right
+    raise NotImplementedError, "#{self.class} has not implemented method '#{__method__}'"
+  end
+
+  def name
     raise NotImplementedError, "#{self.class} has not implemented method '#{__method__}'"
   end
 end

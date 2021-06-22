@@ -1,5 +1,6 @@
 RSpec.describe Direction do
   subject(:direction) { described_class.new }
+
   let(:x_position) { 3 }
   let(:y_position) { 4 }
 

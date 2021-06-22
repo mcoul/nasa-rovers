@@ -3,6 +3,7 @@ class MoveRoverParser
     def execute(input, rover)
       initial_rover = rover.clone
       raise WarningMessage.move_rover if input.strip.empty?
+
       input.scan(/\w/).each do |key|
         raise WarningMessage.move_rover unless moves[key]
 

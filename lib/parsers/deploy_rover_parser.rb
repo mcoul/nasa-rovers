@@ -2,6 +2,7 @@ class DeployRoverParser
   class << self
     def execute(input, plateau)
       raise WarningMessage.deploy_rover if invalid?(input.split)
+
       x_position = input.split[0]
       y_position = input.split[1]
       direction = directions[input.scan(/\w/).last.upcase]

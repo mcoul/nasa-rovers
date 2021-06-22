@@ -87,4 +87,43 @@ Three parsers are defined: 'Create plateau', 'Deploy rover' and 'Move rover', ea
 
 
 
+## Test cases - Results
+
+### Correctly working
+<img src="https://user-images.githubusercontent.com/15703857/122919037-29540900-d336-11eb-91e2-b4567986bd9d.gif" width=60%>
+
+In this case, 4 rovers are deployed and moved inside the plateau, with no problems. Any desired number of rovers can be deployed and moved, there is no restriction for this, since they are treated dynamically.
+
+### Plateau size validations
+<img src="https://user-images.githubusercontent.com/15703857/122918175-38868700-d335-11eb-8dca-f48e86e9214d.gif" width=60%>
+
+For this line, exactly two integer values must be entered, separated by a space, to recognize the maximum x & y coordinates. A warning is shown if:
+- The characters are not numeric
+- The line is empty
+- There are more than two values separated by spaces
+
+Since it is just a warning, the program gives you the opportunity to enter the line again.
+
+### Deployment validations
+<img src="https://user-images.githubusercontent.com/15703857/122921086-79cc6600-d338-11eb-8b77-554bd7116dbe.gif" width=60%>
+
+For this line, exactly two integer values must be entered, separated by a space, to recognize the initial x & y coordinates, plus a valid cardinal point at the end ('N', 'W', 'S', 'E'); both uppercase and lowercase values are accepted. A warning is shown if:
+- The first two values are not numeric
+- The line is empty
+- There are more than three values separated by spaces
+- The cardinal point is invalid
+- The cardinal point is not placed at the end of the string
+
+Since it is just a warning, the program gives you the opportunity to enter the line again.
+
+### Movement validations
+<img src="https://user-images.githubusercontent.com/15703857/122918186-39b7b400-d335-11eb-87f0-390376719546.gif" width=60%>
+
+For this line, a string containing any combination of the three expected movement characters must be entered, separated by a space or all together, both are accepted. A warning is shown if:
+- Any of the characters is not a valid command ('M', 'L', 'R')
+- The line is empty
+
+Since it is just a warning, the program gives you the opportunity to enter the line again.
+
+Another warning for this part is "Out of bounds", that happens whenever a sequence of movements lead the rover to exit the plateau's limits. In this case, the program gives you the opportunity to enter the line again, returning the rover to its initial deployment position.
 
